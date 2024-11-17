@@ -30,7 +30,7 @@ const Posts: CollectionConfig = {
       required: false,
     },
     {
-      name: 'body text',
+      name: 'bodyText',
       type: 'richText',
       required: true,
     },
