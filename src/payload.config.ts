@@ -6,11 +6,11 @@ import { webpackBundler } from '@payloadcms/bundler-webpack'
 import { slateEditor } from '@payloadcms/richtext-slate'
 import { buildConfig } from 'payload/config'
 
-const WHITELIST_ORIGINS= "http://localhost:3000,https://192.168.1.158:3000"
-
 import Users from './collections/Users'
 import Works from './collections/Works'
 import Media from './collections/Media'
+
+const WHITELIST_ORIGINS="http://localhost:3000,https://localhost:3000,http://127.0.0.1:3000,https://127.0.0.1:3000,http://213.165.83.219:3000,https://213.165.83.219:3000"
 
 export default buildConfig({
   serverURL: process.env.PAYLOAD_PUBLIC_EXTERNAL_SERVER_URL,
@@ -21,7 +21,10 @@ export default buildConfig({
   editor: slateEditor({}),
   cors: WHITELIST_ORIGINS.split(','),
   csrf: WHITELIST_ORIGINS.split(','),
-
+  routes: {
+    admin: '/admin',
+    api: '/api'
+  },
   collections: [
     Users, 
     Works,
