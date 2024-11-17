@@ -11,6 +11,7 @@ const WHITELIST_ORIGINS= "http://localhost:3000,https://192.168.1.158:3000"
 import Users from './collections/Users'
 import Works from './collections/Works'
 import Media from './collections/Media'
+import Posts from './collections/Posts'
 
 export default buildConfig({
   serverURL: process.env.PAYLOAD_PUBLIC_EXTERNAL_SERVER_URL,
@@ -25,6 +26,7 @@ export default buildConfig({
   collections: [
     Users, 
     Works,
+    Posts,
     Media,
   ],
 
