@@ -18,25 +18,7 @@ const Posts: CollectionConfig = {
     {
       name: 'subtitle',
       type: 'text',
-      required: false
-    },
-    {
-      name: 'year',
-      type: 'text',
       required: true
-    },
-    {
-      name: 'type',
-      type: 'text',
-      required: false
-    },
-    {
-      name: 'backgroundVideo',
-      type: 'text',
-      admin: {
-        description: () => `Vimeo Link (will be used as background)`,
-      },
-      required: false,
     },
     {
       name: 'backgroundImage',
@@ -45,32 +27,12 @@ const Posts: CollectionConfig = {
       admin: {
         description: () => `Background image (used as fallback if video is not available)`,
       },
-      required: true,
-    },
-    {
-      name: 'downloadLabel',
-      type: 'text',
       required: false,
     },
     {
-      name: 'downloadLink',
-      type: 'text',
-      required: false,
-    },
-    {
-      name: 'description',
+      name: 'body text',
       type: 'richText',
-      required: false,
-    },
-    {
-      name: 'hardware',
-      type: 'text',
-      required: false
-    },
-    {
-      name: 'software',
-      type: 'text',
-      required: false
+      required: true,
     },
     {
       name: 'image',
@@ -86,14 +48,6 @@ const Posts: CollectionConfig = {
           required: true,
         },
       ]
-    },
-    {
-      name: 'otherVideos',
-      type: 'text',
-      admin: {
-        description: () => `Please provide all videos as Vimeo link`,
-      },
-      required: false,
     },
   ],
 }
