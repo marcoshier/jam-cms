@@ -12,8 +12,47 @@ export const Projects: CollectionConfig = {
       required: true,
     },
     {
-      name: 'description',
-      type: 'textarea',
+      name: 'subtitle',
+      type: 'text',
+      required: false,
+      defaultValue: 'A work by Jeroen Meijer'
     },
+    {
+      name: 'year',
+      type: 'number',
+      required: false,
+    },
+    {
+      name: 'coverImage',
+      type: 'upload',
+      relationTo: 'media',
+      required: false,
+    },
+    {
+      name: 'description',
+      type: 'richText',
+      required: false,
+    },
+    {
+      name: 'collaborators',
+      type: 'text',
+      required: false,
+    },
+    {
+      name: 'hardware',
+      type: 'text',
+      required: false,
+    },
+    {
+      name: 'sotware',
+      type: 'text',
+      required: false,
+    },
+    {
+      name: 'otherImages',
+      type: 'upload',
+      relationTo: 'media',
+      hasMany: true,
+    }
   ],
 }

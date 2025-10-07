@@ -1,0 +1,42 @@
+.upload__dropzoneContent__buttons .upload__createNewToggler, .upload__dropzoneContent__buttons .upload__listToggler {
+    height: 30px;
+}
+
+.upload__dropzoneContent__buttons .upload__createNewToggler .btn__label, .upload__dropzoneContent__buttons .upload__listToggler .btn__label {
+    font-size: 0;
+    line-height: 0;
+    padding: 0 10px;
+}
+
+.upload__dropzoneContent__buttons .upload__createNewToggler .btn__label::after {
+    content: "Upload new";
+}
+
+.upload__dropzoneContent__buttons .upload__listToggler .btn__label::after {
+    content: "Choose from archive";
+}
+
+.upload__dropzoneContent__buttons .upload__createNewToggler .btn__label::after, .upload__dropzoneContent__buttons .upload__listToggler .btn__label::after {
+    color: white;
+    font-size: 14px;
+    line-height: normal;
+    display: inline-block;
+}
+
+#otherImages-bulk-upload-drawer-slug-1 .dropzone button {
+    height: 30px;
+}
+
+#otherImages-bulk-upload-drawer-slug-1 .dropzone .btn__label {
+    font-size: 0;
+    line-height: 0;
+    padding: 0 10px;
+}
+
+#otherImages-bulk-upload-drawer-slug-1 .dropzone .btn__label::after {
+    content: "Select files";
+    color: white;
+    font-size: 14px;
+    line-height: normal;
+    display: inline-block;
+}
