@@ -2,6 +2,9 @@ import type { CollectionConfig } from 'payload'
 
 export const Media: CollectionConfig = {
   slug: 'media',
+  access: {
+    read: () => true
+  },
   upload: {
     staticDir: 'media',
     imageSizes: [
@@ -26,9 +29,6 @@ export const Media: CollectionConfig = {
     ],
     adminThumbnail: 'thumbnail',
     mimeTypes: ['image/*'],
-  },
-  access: {
-    read: () => true,
   },
   fields: [
     {
