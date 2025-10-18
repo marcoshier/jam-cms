@@ -23,6 +23,10 @@ export default buildConfig({
     },
   },
   collections: [Projects, Posts, Users, Media],
+  cors: [
+       'https://jam-cms.cloud',
+       'http://localhost:5173',
+     ],
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || '',
   typescript: {
