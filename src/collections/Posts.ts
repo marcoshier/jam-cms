@@ -13,7 +13,7 @@ export const Posts: CollectionConfig = {
     },
     {
       name: 'body text',
-      type: 'textarea',
+      type: 'richText',
     },
   ],
 }
